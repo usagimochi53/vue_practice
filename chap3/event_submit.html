@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>vue.js</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div id="app">
+			<form v-on:submit="onSubmit">
+				<label for="email">メールアドレス</label>
+				<input type="emial" id="email" name="email" />
+				<input type="submit" value="送信"></input>
+			</form>
+		</div>		
+
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="js/event_submit.js"></script>
+	</body>
+</html>

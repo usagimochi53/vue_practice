@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>vue.js</title>
+	</head>
+	<body>
+		<div id="app">
+			<form>
+				<div>お使いのOSは？</div>
+				<label for="windows">Windows</label>
+				<input type="checkbox" id="windows" value="Windows" v-model='os' />
+				<label for="linux">Linux</label>
+				<input type="checkbox" id="linux" value="Linux" v-model='os' />
+				<label for="mac">Mac</label>
+				<input type="checkbox" id="mac" value="Mac" v-model='os' />	
+			</form>
+			<p>you use {{ os }}</p>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="js/model_check_multi.js"></script>
+	</body>
+</html>
